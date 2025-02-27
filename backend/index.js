@@ -4,6 +4,7 @@ const app = express();
 const cors = require("cors");
 const userRouter = require("./authentication/index.js")
 const {getAll , todoInput , completed , deleteAllTodos , deleteTodo , updatingTodo} = require("./controller/todo.controller.js")
+const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -17,7 +18,7 @@ app.put("/updating" , updatingTodo )
 app.delete('/deleteAll' , deleteAllTodos)
 
 
-app.listen(3000, ()=>{
+app.listen(PORT, ()=>{
 
     console.log("Hello my friend")
 
