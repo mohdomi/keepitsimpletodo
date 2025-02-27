@@ -10,7 +10,7 @@ function App() {
 
   return (
     <Routes>
-    <Route path="/mainpage" element={<MainTodoPage />}/>
+    <Route path="/" element={<MainTodoPage />}/>
     </Routes>
   )
 }

@@ -15,13 +15,6 @@ export function Input() {
 
     async function  AddTodo(){
 
-        const token = localStorage.getItem("token");
-
-        if(!token){
-            console.log("No token found , please log in.");
-            return;
-        }
-
         const response =  await axios.post("http://localhost:3000/todoInput" , {
             title : title
         })
