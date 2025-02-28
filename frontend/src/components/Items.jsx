@@ -14,7 +14,7 @@ export function Items() {
   
       async function  something() {
   
-        const {data} = await axios.get("http://localhost:3000/");
+        const {data} = await axios.get("/");
         const packet = data.packet;
         console.log(packet);
         setTasks(packet);
