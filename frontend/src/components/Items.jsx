@@ -56,7 +56,7 @@ export function Items() {
         console.log("value : " , toggle);
 
 
-        const response = await axios.put("http://localhost:3000/completed" , {
+        const response = await axios.put("/completed" , {
           userId : ids , 
           completed : toggle
         })

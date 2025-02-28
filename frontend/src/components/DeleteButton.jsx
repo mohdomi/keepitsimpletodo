@@ -8,7 +8,7 @@ export function DeleteAll() {
 
     async function runFunc() {
         try {
-            const response = await axios.delete("http://localhost:3000/deleteAll");
+            const response = await axios.delete("/deleteAll");
 
             console.log(response.data);
         }

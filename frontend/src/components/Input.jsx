@@ -15,7 +15,7 @@ export function Input() {
 
     async function  AddTodo(){
 
-        const response =  await axios.post("http://localhost:3000/todoInput" , {
+        const response =  await axios.post("/todoInput" , {
             title : title
         })
 
