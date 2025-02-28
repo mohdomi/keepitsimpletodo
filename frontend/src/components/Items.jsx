@@ -29,7 +29,7 @@ export function Items() {
   
           <div className='flex flex-col w-160 justify-start'>
           {
-            tasks.map((task)=>{
+            tasks?.map((task)=>{
               return(
                 <div className='mb-3 flex border-2'>
                   <div className="w-120 font-medium">{task[0]}</div> <br />
